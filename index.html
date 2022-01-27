@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="app/js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+  <link rel="stylesheet" href="app/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" />
+</head>
+
+<body>
+  <section class="chatbox" style="opacity: 0" id='chat-box'>
+    <section class="chat-window" id="chat-window">
+
+      <!-- <article class="msg-container msg-self">
+        <div class="msg-box">
+          <div class="flr">
+            <div class="messages">
+              <p class="msg">
+                Hi
+              </p>
+              <p class="msg" id="msg-2">
+                Youssef
+              </p>
+            </div>
+          </div>
+          <img class="user-img"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQEYfNi6d32Q3w/profile-displayphoto-shrink_800_800/0/1574939885902?e=1648684800&v=beta&t=iEgw_NEONpjiKfNZXEjBNkkunRRcETEexfk0GC7Hqtg" />
+        </div>
+      </article>
+
+      <article class="msg-container msg-remote">
+        <div class="msg-box">
+          <img class="user-img"
+            src="https://profile-images.xing.com/images/88a75bd9eb03bb968feead8a683e3545-1/youssef-el-idrissi-slimani.256x256.jpg" />
+          <div class="flr">
+            <div class="messages">
+              <p class="msg">
+                Hi Mouad
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="msg-container msg-remote">
+        <div class="msg-box">
+          <img class="user-img"
+            src="https://profile-images.xing.com/images/88a75bd9eb03bb968feead8a683e3545-1/youssef-el-idrissi-slimani.256x256.jpg" />
+          <div class="flr">
+            <div class="messages">
+              <p class="msg">
+                How Are You ?
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="msg-container msg-self">
+        <div class="msg-box">
+          <div class="flr">
+            <div class="messages">
+              <p class="msg">
+                I'm OK . thanks
+              </p>
+            </div>
+          </div>
+          <img class="user-img"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQEYfNi6d32Q3w/profile-displayphoto-shrink_800_800/0/1574939885902?e=1648684800&v=beta&t=iEgw_NEONpjiKfNZXEjBNkkunRRcETEexfk0GC7Hqtg" />
+        </div>
+      </article> -->
+
+    </section>
+    <form class="chat-input" id="send-container">
+      <input id="message-input" placeholder="Type a message" />
+      <button type="submit" id="send-button">
+        send
+      </button>
+    </form>
+  </section>
+</body>
+
+</html>
